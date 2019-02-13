@@ -21,7 +21,7 @@ const Discord = require('discord.js');
         .setTitle("blblbl")
          .setColor(0xD4FE00)
          .setDescription("Liste")
-         .setFooter("blblblblbl")
+         .setFooter(":smirk:")
               .addField("...",
                         "blblblbl")
      
