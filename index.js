@@ -22,7 +22,7 @@ const Discord = require('discord.js');
          .setColor(0xD4FE00)
          .setDescription("Liste")
          .setFooter(":smirk:")
-              .addField("...",
+              .addField(":smirk:",
                         "blblblbl")
      
          message.channel.send({embed});
