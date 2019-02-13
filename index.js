@@ -15,7 +15,7 @@ const Discord = require('discord.js');
  
  bot.on("guildMemberAdd", member => {
 
-    if (message.content.prefix.startsWith("sondage")){
+    if (message.content.startsWith(">sondage")){
         let args = message.content.split(" ").slice(1)
         let thingToEcho = args.join(" ")
         var embed = new Discord.RichEmbed()
@@ -30,7 +30,7 @@ const Discord = require('discord.js');
         }).catch(function() {
         });
     }
-if (message.content.prefix.startsWith("annonce")){
+if (message.content.startsWith(">annonce")){
     let args = message.content.split(" ").slice(1)
     let thingToEcho = args.join(" ")
     var embed = new Discord.RichEmbed()
