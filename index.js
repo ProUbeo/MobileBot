@@ -13,7 +13,7 @@ const Discord = require('discord.js');
  
  bot.login(process.env.TOKEN);
  
- bot.on("guildMemberAdd", member => {
+
   bot.on('message', message => {
     if(message.content === ">test" ){ 
  
@@ -27,10 +27,10 @@ const Discord = require('discord.js');
      
          message.channel.send({embed});
     }
-   }}
+   }
 )
-function random(min, max) {
-    min = Math.ceil(0)
-    max = Math.floor(3)
-    test = Math.floor(Math.random() * (max - min +1) + min);
- }
+
+   
+ 
+
+
