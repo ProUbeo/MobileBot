@@ -27,7 +27,13 @@ const Discord = require('discord.js');
      
          message.channel.send({embed});
     }
-   }
+   if (message.content.startsWith("rp!say")){
+    if("234368202379886593 323807479651631104".includes(message.author.id)){
+    let args = message.content.split(" ").slice(1)
+    let thingToEcho = args.join(" ")
+    message.delete();
+    message.channel.send(`${thingToEcho}`)  
+   }}}
 )
 
    
