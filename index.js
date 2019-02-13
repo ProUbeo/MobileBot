@@ -14,37 +14,19 @@ const Discord = require('discord.js');
  bot.login(process.env.TOKEN);
  
  bot.on("guildMemberAdd", member => {
-
-    if (message.content.startsWith(">sondage")){
-        let args = message.content.split(" ").slice(1)
-        let thingToEcho = args.join(" ")
-        var embed = new Discord.RichEmbed()
-        .setDescription(`Sondage Par **${message.author.username}**`)
-        .addField(thingToEcho, "Vous pouvez répondre par les réactions (disponible en dessous de ce message)")
-        .setColor(0xD4FE00)
-        .setFooter("surprise")
-        message.channel.send(embed)
-        .then(function (message) {
-    message.react("❌")
-    message.react("✔")    
-        }).catch(function() {
-        });
+    if(message.content === ">test" ){ 
+ 
+        const embed = new Discord.RichEmbed()
+        .setTitle("blblbl")
+         .setColor(0xD4FE00)
+         .setDescription("Liste")
+         .setFooter("blblblblbl")
+              .addField("...",
+                        "blblblbl")
+     
+         message.channel.send({embed});
     }
-if (message.content.startsWith(">annonce")){
-    let args = message.content.split(" ").slice(1)
-    let thingToEcho = args.join(" ")
-    var embed = new Discord.RichEmbed()
-    .setDescription(`**${message.author.username}** Demande votre attention !`)
-    .addField("[Important, Annonce]", thingToEcho)
-    .setColor(0xD4FE00)
-    .setFooter("surprise :3")
-    message.channel.send(embed)
-    .then(function (message) {
-        message.react("✔") 
-    })
-}else{
-    return message.reply("Une Erreur à été détécté !")
-}}
+   }
 )
 function random(min, max) {
     min = Math.ceil(0)
