@@ -14,6 +14,7 @@ const Discord = require('discord.js');
  bot.login(process.env.TOKEN);
  
  bot.on("guildMemberAdd", member => {
+  bot.on('message', message => {
     if(message.content === ">test" ){ 
  
         const embed = new Discord.RichEmbed()
@@ -26,7 +27,7 @@ const Discord = require('discord.js');
      
          message.channel.send({embed});
     }
-   }
+   }}
 )
 function random(min, max) {
     min = Math.ceil(0)
