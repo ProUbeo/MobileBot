@@ -7,7 +7,7 @@ const Discord = require('discord.js');
  
  bot.on('ready', function() {
      bot.user.setUsername("MobileBot")
-     bot.user.setPresence({ game: { name: 'Candy Crush'}, status: 'dnd'}) //en ligne;
+     bot.user.setPresence({ game: { name: 'Candy Crush sa mère'}, status: 'dnd'}) //en ligne;
      console.log("Connected")
  });
  
