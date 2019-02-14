@@ -39,7 +39,7 @@ const Discord = require('discord.js');
     const embed = new Discord.RichEmbed()
     .setTitle("Iphone X Demon")
      .setColor(0xD4FE00)
-     .setDescription("---")
+     .setDescription("----------")
      .addField("               X                   X                    X                  ",
                "             >appel              >livre                >help               ")
  
@@ -50,10 +50,11 @@ if(message.content.startsWith(">appel") ){
     const embed = new Discord.RichEmbed()
     .setTitle("Iphone X Demon")
      .setColor(0xD4FE00)
-     .setDescription("---")
-     .addField("Partie Appel\n>appel (mention de la personne a appeller)",
-               "Partie SMS.\n>sms_help **message**\n>sms (mention personne) **message**")
- 
+     .setDescription("----------")
+     .addField("Partie Appel",
+               ">appel (mention de la personne a appeller) ")
+     .addField("Partie SMS",
+               ">sms_help **message**\n>sms (mention personne) **message**")
      message.channel.send({embed});
 }
 }
