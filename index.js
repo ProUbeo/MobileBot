@@ -15,7 +15,7 @@ const Discord = require('discord.js');
  
 
   bot.on('message', message => {
-    if(message.content === ">test" ){ 
+    if(message.content.startsWith(">test") ){ 
  
         const embed = new Discord.RichEmbed()
         .setTitle("blblbl")
@@ -33,10 +33,28 @@ const Discord = require('discord.js');
     let thingToEcho = args.join(" ")
     message.delete();
     message.channel.send(`${thingToEcho}`)  
-   }}}
-)
-
-   
+   }}
+   if(message.content.startsWith(">téléphone") ){ 
  
-
-
+    const embed = new Discord.RichEmbed()
+    .setTitle("Iphone X Demon")
+     .setColor(0xD4FE00)
+     .setDescription("---")
+     .addField("               X.                   X.                    X.                ",
+               "             >appel              >livre                >help               ")
+ 
+     message.channel.send({embed});
+}
+if(message.content.startsWith(">appel") ){ 
+ 
+    const embed = new Discord.RichEmbed()
+    .setTitle("Iphone X Demon")
+     .setColor(0xD4FE00)
+     .setDescription("---")
+     .addField("Partie Appel\s>appel (mention de la personne a appeller)",
+               "Partie SMS.\s>sms_help **message**\s>sms (mention personne) **message**")
+ 
+     message.channel.send({embed});
+}
+}
+)
