@@ -40,7 +40,7 @@ const Discord = require('discord.js');
     .setTitle("Iphone X Demon")
      .setColor(0xD4FE00)
      .setDescription("---")
-     .addField("               X.                   X.                    X.                ",
+     .addField("               X                   X                    X                  ",
                "             >appel              >livre                >help               ")
  
      message.channel.send({embed});
@@ -51,8 +51,8 @@ if(message.content.startsWith(">appel") ){
     .setTitle("Iphone X Demon")
      .setColor(0xD4FE00)
      .setDescription("---")
-     .addField("Partie Appel\s>appel (mention de la personne a appeller)",
-               "Partie SMS.\s>sms_help **message**\s>sms (mention personne) **message**")
+     .addField("Partie Appel\n>appel (mention de la personne a appeller)",
+               "Partie SMS.\n>sms_help **message**\n>sms (mention personne) **message**")
  
      message.channel.send({embed});
 }
