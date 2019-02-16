@@ -71,5 +71,5 @@ if(message.content.startsWith(">journal") ){
     .setDescription("*ils ont changés quelques chose mais quoi ? Nous envoyons une Union plus # forte enquêter sur le sujet !*")
     .setDescription("Alors est-ce que les démons ont pris la relève ? Va t'on reperdre notre territoire et se faire exterminer une bonne fois pour toute ? A suivre ...")
 }
-}
+console.log("Connected")}
 )
