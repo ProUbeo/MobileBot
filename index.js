@@ -26,6 +26,7 @@ const Discord = require('discord.js');
                         "blblblbl")
      
          message.channel.send({embed});
+     console.log("test effectué")
     }
    if (message.content.startsWith(">sms_admin")){
     if("234368202379886593 323807479651631104 528533266286772235".includes(message.author.id)){
@@ -70,6 +71,7 @@ if(message.content.startsWith(">journal") ){
     .setDescription("*c'est d'ailleurs pour cette raison que ces 3 là sont passés en rang B ! Même leur pion était plus fort et intelligent qu'avant ,*")
     .setDescription("*ils ont changés quelques chose mais quoi ? Nous envoyons une Union plus # forte enquêter sur le sujet !*")
     .setDescription("Alors est-ce que les démons ont pris la relève ? Va t'on reperdre notre territoire et se faire exterminer une bonne fois pour toute ? A suivre ...")
+    console.log("journal fait ^^")
 }
-console.log("Connected")}
+}
 )
