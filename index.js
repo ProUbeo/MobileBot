@@ -69,7 +69,7 @@ if (message.content.startsWith(prefix + "journal")){
     .addField("ㅤㅤ",
     "*3 quarts de mes hommes ... Surtout que les chefs démoniaques n'étaient normalement que rang D ! Je ne sais pas ce qui leur est arrivé , mais ils sont devenus beaucoup plus fort qu'avant , et*")
     .addField("ㅤㅤ",
-    "*c'est d'ailleurs pour cette raison que ces 3 là sont passés en rang B ! Même leur pion était plus fort et intelligent qu'avant , ils ont changés quelques chose mais quoi ? Nous envoyons une Union plus\nforte enquêter sur le sujet !*\nAlors est-ce que les démons ont pris la relève ? Va t'on reperdre notre territoire et se faire exterminer une bonne fois pour toute ? A suivre ...")
+    "*c'est d'ailleurs pour cette raison que ces 3 là sont passés en rang B ! Même leur pion était plus fort et intelligent qu'avant , ils ont changés quelques chose mais quoi ? Nous envoyons une Union plus\nforte enquêter sur le sujet !*\nAlors est-ce que les démons ont pris la relève ? Va t'on reperdre notre territoire et se faire exterminer une bonne fois pour toute ? A suivre ...\n \nfaites >journal_2 pour passer a la page 2")
     .setColor(0xD4FE00)
     message.channel.send(embed)
 }
