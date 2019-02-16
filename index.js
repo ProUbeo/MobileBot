@@ -105,6 +105,6 @@ if(message.content == ">numbor stop"){
 }else{
  message.channel.send("-_- l'application n'est pas lancé (gogole)")
 }
-}
+console.log("test effectué")}
 }
 )
