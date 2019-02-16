@@ -63,25 +63,12 @@ if(message.content == ">Numbor start"){
     if(party_launch == true){
         message.channel.send(`la partie est déjà lancé ${message.author} ^^`)
     }else{
-aléa1();
 
-    if (alé1 == 1){
+    if (party_launch == false){
         message.channel.send(":arrow_forward: cette manche sera entre 0 est 5000 :arrow_forward: ")
         
         number_random = Math.floor(Math.random() * (5000 - 0) + 0)
         console.log(number_random);
-}
-if (alé1 == 2){
-    message.channel.send(":arrow_forward: cette manche sera entre 0 est 20000 :arrow_forward: ")
-    
-    number_random = Math.floor(Math.random() * (20000 - 0) + 0)
-    console.log(number_random);
-}
-if (alé1== 3){
-    message.channel.send(":arrow_forward: cette manche sera entre 0 est 100000 :arrow_forward: ")
-    number_random = Math.floor(Math.random() * (100000 - 0) + 0)
-    console.log(number_random);
-}
 party_launch = true;
 }
 }
