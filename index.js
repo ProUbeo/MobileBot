@@ -4,6 +4,7 @@ const Discord = require('discord.js');
  var prefix = (">")
  var randnum = 0;
  var battle_ennemy = false;
+ var party_launch = false;
  
  bot.on('ready', function() {
      bot.user.setUsername("MobileBot")
@@ -105,6 +106,6 @@ if(message.content == ">numbor stop"){
 }else{
  message.channel.send("-_- l'application n'est pas lancé (gogole)")
 }
-console.log("test effectué")}
+}
 }
 )
