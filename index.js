@@ -55,7 +55,7 @@ if(message.content.startsWith(">appel") ){
      .setColor(0xD4FE00)
      .setDescription("----------")
      .addField("Partie Appel",
-               ">appel (mention de la personne a appeller) ")
+               ">appels (mention de la personne a appeller) ")
      .addField("Partie SMS",
                ">sms_help **message**\n>sms (mention personne) **message**")
      message.channel.send({embed});
@@ -122,6 +122,24 @@ if(message.content == ">numbor stop"){
  message.channel.send("aucune manche en cours")
 }
 }
+
+if(message.content.startsWith(prefix + "appels")) {
+
+    if(message.mentions.users.first()){
+
+    let messageToSend = message.content.split(" ").slice(2).join(" ");
+    let userToSend = message.mentions.users.first();
+
+    userToSend.send(`${message.author.username} vous appelle du serveur rp "Empire of the Union" car : ${messageToSend}`);
+    message.delete();
+    message.channel.send(`${message.author.username} lance un appel a ${message.mentions.users.first().username}`)
+}else{
+message.delete();
+message.channel.send(`je n'ai pas compris a qui veux-tu lancer un appel :3`)
+
+}
+}
+
 }
 )
 function aléa1(min, max) {
