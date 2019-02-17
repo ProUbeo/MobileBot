@@ -48,7 +48,7 @@ const Discord = require('discord.js');
  
      message.channel.send({embed});
 }
-if(message.content.startsWith(">appel") ){ 
+if(message.content == ">appel"){ 
  
     const embed = new Discord.RichEmbed()
     .setTitle("Iphone X Demon")
