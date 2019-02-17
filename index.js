@@ -44,7 +44,7 @@ const Discord = require('discord.js');
      .setColor(0xD4FE00)
      .setDescription("----------")
      .addField("               X                   X                    X                  ",
-               "             >appel              >numbor                >journal               ")
+               "             >appel              >numbor             >journal_1               ")
  
      message.channel.send({embed});
 }
@@ -55,13 +55,13 @@ if(message.content.startsWith(">appel") ){
      .setColor(0xD4FE00)
      .setDescription("----------")
      .addField("Partie Appel",
-               ">appels (mention de la personne a appeller) ")
+               ">appels (mention de la personne a appeller)\n>appel_urgence (mention de la personne)")
      .addField("Partie SMS",
                ">sms_help **message**\n>sms (mention personne) **message**")
      message.channel.send({embed});
 }
 
-if (message.content.startsWith(prefix + "journal")){
+if (message.content.startsWith(prefix + "journal_1")){
     var embed = new Discord.RichEmbed()
     .setTitle("Iphone X Demon")
     .addField("***Journal des Démons du mois de Février***", "ㅤㅤ")
@@ -70,6 +70,30 @@ if (message.content.startsWith(prefix + "journal")){
     "*3 quarts de mes hommes ... Surtout que les chefs démoniaques n'étaient normalement que rang D ! Je ne sais pas ce qui leur est arrivé , mais ils sont devenus beaucoup plus fort qu'avant , et*")
     .addField("ㅤㅤ",
     "*c'est d'ailleurs pour cette raison que ces 3 là sont passés en rang B ! Même leur pion était plus fort et intelligent qu'avant , ils ont changés quelques chose mais quoi ? Nous envoyons une Union plus\nforte enquêter sur le sujet !*\nAlors est-ce que les démons ont pris la relève ? Va t'on reperdre notre territoire et se faire exterminer une bonne fois pour toute ? A suivre ...\n \nfaites >journal_2 pour passer a la page 2")
+    .setColor(0xD4FE00)
+    message.channel.send(embed)
+}
+
+if (message.content.startsWith(prefix + "journal_2")){
+    var embed = new Discord.RichEmbed()
+    .setTitle("Iphone X Demon")
+    .addField("***Journal des Démons du mois de Février***", "ㅤㅤ")
+    .addField("Guerre des paysans : A bas l'élevage des créatures légendaire !", "Beaucoup de paysans se plaignent de devoir élever des créatures fantastiques tel que la licorne ou encore le dragon nain à corne ! Ils trouvent leur métié beaucoup trop dangeureux pour au final , ce")
+    .addField("     ", 
+              "qu'il gagne . Peu de personne sont dans ce types de métiers car les animaux fantastiques sont de nouvelles espèces encore rare à ce jour . Le parlement réfléchit pour améliorer les conditions de travaille\ndes fermier ! Nous vous rappelons ici que la viande animale de type drogue est interdite sur le terrain de l'Union ! Cette affaire est encore vague alors le gouvernement ne veux pas nous donner plus d'information !")
+    .addField("     ", "faites >journal_3 pour passer a la page 3")
+    .setColor(0xD4FE00)
+    message.channel.send(embed)
+}
+
+if (message.content.startsWith(prefix + "journal_3")){
+    var embed = new Discord.RichEmbed()
+    .setTitle("Iphone X Demon")
+    .addField("***Journal des Démons du mois de Février***", "ㅤㅤ")
+    .addField("Le mort revenant à la vie ! Oran Kukutsumi !", "Il y a peu , le docteur Swatrz à trouvé dans un cube bien étrange non identifié le corps d'un soldat venant de 2050 ! Celui ci à déclaré venir de cette époque et de s'appeler Oran Kukutsumi ! Après Vérification , nous pouvons certifié que ce personnage à bien existé ! Alors est-ce un imposteur ? Ou le Vrai Oran ? Nos test ADN montre que cette individu correspond tout à fait à Oran")
+    .addField("     ", "Kukutsumi . Mais quel est donc cette matière ? D'après les pros , ce serait de la démonyte qui aurait protéger Oran mais normalement , la démonyte est censé tuer celui qui en est le propriétaire ...  Et pire encore ! Cette individu à disparu juste après avoir été sauver de ce cube ! Allons nous le retrouver et en savoir plus ... a suivre ...")
+    .addField("     ", "Fin")
+    .setFooter("Edition Naka(c) Février 2019")
     .setColor(0xD4FE00)
     message.channel.send(embed)
 }
