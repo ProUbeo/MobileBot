@@ -61,7 +61,7 @@ if(message.content == ">appel"){
      message.channel.send({embed});
 }
 
-if (message.content.startsWith(prefix + "journal_1")){
+if (message.content == ">journal_1"){
     var embed = new Discord.RichEmbed()
     .setTitle("Iphone X Demon")
     .addField("***Journal des Démons du mois de Février***", "ㅤㅤ")
@@ -74,7 +74,7 @@ if (message.content.startsWith(prefix + "journal_1")){
     message.channel.send(embed)
 }
 
-if (message.content.startsWith(prefix + "journal_2")){
+if (message.content == ">journal_2"){
     var embed = new Discord.RichEmbed()
     .setTitle("Iphone X Demon")
     .addField("***Journal des Démons du mois de Février***", "ㅤㅤ")
@@ -86,7 +86,7 @@ if (message.content.startsWith(prefix + "journal_2")){
     message.channel.send(embed)
 }
 
-if (message.content.startsWith(prefix + "journal_3")){
+if (message.content == ">journal_3"){
     var embed = new Discord.RichEmbed()
     .setTitle("Iphone X Demon")
     .addField("***Journal des Démons du mois de Février***", "ㅤㅤ")
